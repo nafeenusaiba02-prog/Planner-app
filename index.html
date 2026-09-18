@@ -1,12 +1,15 @@
 <!doctype html>
-<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260917-05-f0c5fe2","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/83d6dfdadcd4750a.telemetry_sdk.js" integrity="sha512-XS4Dvzp6vbagZS9vFErihvr8aO3S0tH78KWUefn06fmL4WYqryBtZj/IOLITYj7dFA4gPVvPg1W/JB1DK3uLNQ=="></script>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yearly Planner</title>
+
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
-  <script src="/_sdk/8de366929c5f3b48.data_sdk.js" integrity="sha512-TyQ8k8cZj66xe/aENmn6RyZpdOFZXbAo5+KBG3PeFM+Q4qMTHU8xAqmq4ADClNfPrstgQYV6OzZHwLTnElzB2g=="></script>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --ink: #17342d;
@@ -20,416 +23,2813 @@
       --gold: #d39948;
       --danger: #b9524b;
     }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: "DM Sans", sans-serif; color: var(--ink); }
-    button, input, textarea, select { font: inherit; }
-    button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
-      outline: 3px solid #d39948; outline-offset: 2px;
+
+    * {
+      box-sizing: border-box;
     }
+
+    body {
+      margin: 0;
+      font-family: "DM Sans", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    button:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible,
+    select:focus-visible {
+      outline: 3px solid #d39948;
+      outline-offset: 2px;
+    }
+
     .app-shell {
       width: 100%;
-      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      min-height: 100vh;
       background:
         radial-gradient(circle at 95% 4%, rgba(243,215,193,.8), transparent 24rem),
         radial-gradient(circle at 3% 18%, rgba(220,233,222,.9), transparent 24rem),
         var(--paper);
     }
-    .display-font { font-family: "Fraunces", serif; }
-    .soft-card { background: rgba(255,254,249,.9); border: 1px solid var(--line); box-shadow: 0 10px 30px rgba(35,67,57,.06); }
-    .month-card { transition: transform .18s ease, box-shadow .18s ease; }
-    .month-card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(35,67,57,.12); }
-    .calendar-mini, .calendar-large { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 3px; }
-    .calendar-mini span { text-align: center; font-size: 10px; line-height: 1.55rem; color: var(--muted); border-radius: 5px; }
-    .calendar-mini .today, .calendar-large .today { background: var(--sage); color: var(--ink); font-weight: 700; }
-    .calendar-mini .has-event { color: var(--sage-dark); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
-    .calendar-large button { min-height: 54px; border: 1px solid #edf0e9; border-radius: 10px; text-align: left; padding: 7px; color: var(--ink); background: #fffef9; transition: background .15s ease; }
-    .calendar-large button:hover { background: #edf5ed; }
-    .calendar-large .selected-day { background: var(--sage-dark); color: white; border-color: var(--sage-dark); }
-    .calendar-large .event-day::after { content: ""; display: block; width: 5px; height: 5px; border-radius: 999px; margin-top: 3px; background: var(--gold); }
-    .view-hidden { display: none !important; }
-    .toast { transform: translateY(120%); opacity: 0; transition: .25s ease; }
-    .toast.show { transform: translateY(0); opacity: 1; }
-    .status-dot { width: 8px; height: 8px; border-radius: 999px; display: inline-block; }
-    .record-item { border-bottom: 1px solid #e8ece5; }
-    .record-item:last-child { border-bottom: 0; }
-    .icon-btn { width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; }
-    .reveal { animation: rise .45s ease both; }
-    @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+    .display-font {
+      font-family: "Fraunces", serif;
+    }
+
+    .soft-card {
+      background: rgba(255,254,249,.9);
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 30px rgba(35,67,57,.06);
+    }
+
+    .month-card {
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .month-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 32px rgba(35,67,57,.12);
+    }
+
+    .calendar-mini,
+    .calendar-large {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 3px;
+    }
+
+    .calendar-mini span {
+      text-align: center;
+      font-size: 10px;
+      line-height: 1.55rem;
+      color: var(--muted);
+      border-radius: 5px;
+    }
+
+    .calendar-mini .today,
+    .calendar-large .today {
+      background: var(--sage);
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .calendar-mini .has-event {
+      color: var(--sage-dark);
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .calendar-large button {
+      min-height: 54px;
+      border: 1px solid #edf0e9;
+      border-radius: 10px;
+      text-align: left;
+      padding: 7px;
+      color: var(--ink);
+      background: #fffef9;
+      transition: background .15s ease;
+    }
+
+    .calendar-large button:hover {
+      background: #edf5ed;
+    }
+
+    .calendar-large .selected-day {
+      background: var(--sage-dark);
+      color: white;
+      border-color: var(--sage-dark);
+    }
+
+    .calendar-large .event-day::after {
+      content: "";
+      display: block;
+      width: 5px;
+      height: 5px;
+      border-radius: 999px;
+      margin-top: 3px;
+      background: var(--gold);
+    }
+
+    .view-hidden {
+      display: none !important;
+    }
+
+    .toast {
+      transform: translateY(120%);
+      opacity: 0;
+      transition: .25s ease;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .record-item {
+      border-bottom: 1px solid #e8ece5;
+    }
+
+    .record-item:last-child {
+      border-bottom: 0;
+    }
+
+    .icon-btn {
+      width: 38px;
+      height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+    }
+
+    .reveal {
+      animation: rise .45s ease both;
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
-  <script src="/_sdk/a558f474cd01d324.resizing_sdk.js" type="text/javascript" integrity="sha512-evIEjzvRDdaV6tHT4THeYa18+ppfgUj4Zpx5W8R1gaF2VKcOba7TPP4x2YYqsfThPwuC5NaBFyUH6V81c3i8kA=="></script>
- </head>
- <body data-template-id="__page-root" style="background: rgb(245, 244, 238);">
-  <div class="app-shell">
-   <header class="w-full px-4 pt-5 sm:px-8 sm:pt-8">
+</head>
+
+<body>
+<div class="app-shell">
+
+  <!-- HEADER -->
+  <header class="w-full px-4 pt-5 sm:px-8 sm:pt-8">
     <div class="mx-auto max-w-7xl">
-     <div data-template-id="planner-header" class="canva-header soft-card reveal rounded-[1.75rem] px-5 py-5 sm:px-8" style="background: rgb(255, 254, 249);">
-      <div class="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
-       <div>
-        <p data-template-id="eyebrow" class="canva-text mb-1 text-xs font-bold uppercase tracking-[.18em]" style="color: rgb(40, 100, 80); font-weight: 700; font-style: normal; font-size: 12px; letter-spacing: 0.12rem;">PERSONAL PRODUCTIVITY</p>
-        <h1 data-template-id="planner-title" class="canva-text display-font text-4xl font-bold leading-tight sm:text-5xl" style="color: rgb(23, 52, 45); font-weight: 700; font-style: normal; font-size: 30px;">Yearly Planner</h1>
-        <p data-template-id="planner-subtitle" class="canva-text mt-2 max-w-xl text-sm leading-6" style="color: rgb(104, 129, 122); font-weight: 400; font-style: normal; font-size: 15px; line-height: 1.5;">A calm place to map the year, notice what matters, and keep momentum.</p>
-       </div>
-       <div class="flex flex-wrap items-center gap-2"><button id="previous-year" type="button" aria-label="Previous year" class="icon-btn border border-[#dce2d8] bg-white text-[#17342d] hover:bg-[#edf5ed]"><i data-lucide="chevron-left" width="18"></i></button>
-        <div id="year-label" aria-live="polite" class="min-w-20 text-center text-lg font-bold"></div><button id="next-year" type="button" aria-label="Next year" class="icon-btn border border-[#dce2d8] bg-white text-[#17342d] hover:bg-[#edf5ed]"><i data-lucide="chevron-right" width="18"></i></button> <button id="current-year" data-template-id="current-year-button" type="button" class="canva-button rounded-full px-4 py-2 text-sm font-bold transition hover:brightness-95" style="background: rgb(220, 233, 222); color: rgb(23, 52, 45); font-weight: 700; font-style: normal; font-size: 15px;">This year</button>
-       </div>
+
+      <div class="soft-card reveal rounded-[1.75rem] px-5 py-5 sm:px-8">
+        <div class="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+
+          <div>
+            <p class="mb-1 text-xs font-bold uppercase tracking-[.18em]"
+               style="color:#286450;">
+              PERSONAL PRODUCTIVITY
+            </p>
+
+            <h1 class="display-font text-4xl font-bold leading-tight sm:text-5xl">
+              Yearly Planner
+            </h1>
+
+            <p class="mt-2 max-w-xl text-sm leading-6"
+               style="color:#68817a;">
+              A calm place to map the year, notice what matters, and keep momentum.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2">
+
+            <button id="previous-year"
+                    type="button"
+                    aria-label="Previous year"
+                    class="icon-btn border border-[#dce2d8] bg-white hover:bg-[#edf5ed]">
+              <i data-lucide="chevron-left" width="18"></i>
+            </button>
+
+            <div id="year-label"
+                 aria-live="polite"
+                 class="min-w-20 text-center text-lg font-bold">
+            </div>
+
+            <button id="next-year"
+                    type="button"
+                    aria-label="Next year"
+                    class="icon-btn border border-[#dce2d8] bg-white hover:bg-[#edf5ed]">
+              <i data-lucide="chevron-right" width="18"></i>
+            </button>
+
+            <button id="current-year"
+                    type="button"
+                    class="rounded-full px-4 py-2 text-sm font-bold"
+                    style="background:#dce9de;color:#17342d;">
+              This year
+            </button>
+
+          </div>
+        </div>
+
+        <nav class="mt-6 flex gap-2 border-t border-[#e3e8df] pt-4"
+             aria-label="Planner views">
+
+          <button id="overview-tab"
+                  type="button"
+                  class="rounded-full px-4 py-2 text-sm font-bold bg-[#286450] text-white">
+            Annual overview
+          </button>
+
+          <button id="month-tab"
+                  type="button"
+                  class="rounded-full px-4 py-2 text-sm font-bold bg-transparent text-[#68817a]">
+            Month view
+          </button>
+
+        </nav>
       </div>
-      <nav class="mt-6 flex gap-2 border-t border-[#e3e8df] pt-4" aria-label="Planner views"><button id="overview-tab" data-template-id="overview-tab-button" type="button" class="canva-button rounded-full px-4 py-2 text-sm font-bold" style="background: rgb(40, 100, 80); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 15px;">Annual overview</button> <button id="month-tab" data-template-id="month-tab-button" type="button" class="canva-button rounded-full px-4 py-2 text-sm font-bold" style="background: rgb(255, 255, 255); color: rgb(104, 129, 122); font-weight: 700; font-style: normal; font-size: 15px;">Month view</button>
-      </nav>
-     </div>
     </div>
-   </header>
-   <main class="w-full px-4 pb-10 pt-6 sm:px-8">
+  </header>
+
+
+  <!-- MAIN -->
+  <main class="w-full px-4 pb-10 pt-6 sm:px-8">
     <div class="mx-auto max-w-7xl">
-     <section id="overview-view" aria-labelledby="annual-heading">
-      <div class="mb-5 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
-       <div>
-        <p data-template-id="overview-kicker" class="canva-text text-xs font-bold uppercase tracking-[.16em]" style="color: rgb(40, 100, 80); font-weight: 700; font-style: normal; font-size: 12px; letter-spacing: 0.12rem;">THE BIG PICTURE</p>
-        <h2 id="annual-heading" data-template-id="overview-heading" class="canva-text display-font mt-1 text-3xl font-bold" style="color: rgb(23, 52, 45); font-weight: 700; font-style: normal; font-size: 23px;">Your year, in view</h2>
-       </div>
-       <p data-template-id="overview-help" class="canva-text max-w-lg text-sm leading-6" style="color: rgb(104, 129, 122); font-weight: 400; font-style: normal; font-size: 14px;">Select a month to focus in, or keep the whole year visible while you plan.</p>
-      </div>
-      <section id="months-grid" class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3" aria-label="Yearly calendar overview"></section>
-      <div class="mt-8 grid gap-6 lg:grid-cols-2">
-       <section data-template-id="goals-panel" class="canva-panel soft-card rounded-[1.5rem] p-5 sm:p-6" aria-labelledby="goals-heading" style="background: rgb(255, 254, 249);">
-        <div class="flex items-start justify-between gap-4">
-         <div>
-          <p data-template-id="goals-kicker" class="canva-text text-xs font-bold uppercase tracking-[.16em]" style="color: rgb(40, 100, 80); font-weight: 700; font-style: normal; font-size: 12px; letter-spacing: 0.12rem;">DIRECTION</p>
-          <h2 id="goals-heading" data-template-id="goals-heading-text" class="canva-text display-font mt-1 text-2xl font-bold" style="color: rgb(23, 52, 45); font-weight: 700; font-style: normal; font-size: 23px;">Annual goals</h2>
-         </div><i data-lucide="target" class="text-[#286450]" width="22"></i>
+
+      <!-- ANNUAL VIEW -->
+      <section id="overview-view">
+
+        <div class="mb-5 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[.16em]"
+               style="color:#286450;">
+              THE BIG PICTURE
+            </p>
+
+            <h2 class="display-font mt-1 text-3xl font-bold">
+              Your year, in view
+            </h2>
+          </div>
+
+          <p class="max-w-lg text-sm leading-6"
+             style="color:#68817a;">
+            Select a month to focus in, or keep the whole year visible while you plan.
+          </p>
         </div>
-        <form id="goal-form" class="mt-5 grid gap-3 sm:grid-cols-[1fr_130px_auto]">
-         <div><label data-template-id="goal-title-label" class="canva-text sr-only" for="goal-title" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;">Goal title</label> <input id="goal-title" required="" maxlength="100" data-template-id="goal-title-input" class="canva-input w-full rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm" type="text" placeholder="Add a goal worth returning to" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;">
-         </div>
-         <div><label data-template-id="goal-progress-label" class="canva-text sr-only" for="goal-progress" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;">Starting progress</label> <input id="goal-progress" min="0" max="100" value="0" class="w-full rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm" type="number">
-         </div><button data-template-id="add-goal-button" class="canva-button rounded-xl px-4 py-2.5 text-sm font-bold" type="submit" style="background: rgb(40, 100, 80); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 15px;">Add goal</button>
-        </form>
-        <div id="goal-list" class="mt-4"></div>
-        <p id="goals-empty" data-template-id="goals-empty-state" class="canva-text mt-4 rounded-xl bg-[#f2f5ef] px-4 py-4 text-sm" style="background: rgb(242, 245, 239); color: rgb(104, 129, 122); font-weight: 400; font-style: normal; font-size: 15px;">Start with one meaningful goal. You can adjust progress whenever you need.</p>
-       </section>
-       <section data-template-id="notes-panel" class="canva-panel soft-card rounded-[1.5rem] p-5 sm:p-6" aria-labelledby="notes-heading" style="background: rgb(255, 254, 249);">
-        <div class="flex items-start justify-between gap-4">
-         <div>
-          <p data-template-id="notes-kicker" class="canva-text text-xs font-bold uppercase tracking-[.16em]" style="color: rgb(40, 100, 80); font-weight: 700; font-style: normal; font-size: 12px; letter-spacing: 0.12rem;">REFLECTION</p>
-          <h2 id="notes-heading" data-template-id="notes-heading-text" class="canva-text display-font mt-1 text-2xl font-bold" style="color: rgb(23, 52, 45); font-weight: 700; font-style: normal; font-size: 23px;">Notes for the year</h2>
-         </div><i data-lucide="notebook-pen" class="text-[#286450]" width="22"></i>
-        </div><label data-template-id="annual-notes-label" class="canva-text sr-only" for="annual-notes" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;">Annual planning notes</label> <textarea id="annual-notes" data-template-id="annual-notes-input" class="canva-input mt-5 min-h-44 w-full resize-y rounded-xl border border-[#dce2d8] bg-white p-3 text-sm leading-6" maxlength="3000" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;">Capture themes, ideas, reminders, or the feeling you want this year to hold.</textarea>
-        <div class="mt-3 flex items-center justify-between gap-4">
-         <p data-template-id="notes-help" class="canva-text text-xs leading-5" style="color: rgb(104, 129, 122); font-weight: 400; font-style: normal; font-size: 12px;">Keep this light — it is a living note, not a finished plan.</p><button id="save-notes" data-template-id="save-notes-button" type="button" class="canva-button shrink-0 rounded-xl px-4 py-2.5 text-sm font-bold" style="background: rgb(220, 233, 222); color: rgb(23, 52, 45); font-weight: 700; font-style: normal; font-size: 15px;">Save notes</button>
-        </div>
-       </section>
-      </div>
-      <div class="mt-6 grid gap-6 lg:grid-cols-5">
-       <section data-template-id="tasks-panel" class="canva-panel soft-card rounded-[1.5rem] p-5 sm:p-6 lg:col-span-3" aria-labelledby="tasks-heading" style="background: rgb(255, 254, 249);">
-        <div class="flex items-start justify-between gap-4">
-         <div>
-          <p data-template-id="tasks-kicker" class="canva-text text-xs font-bold uppercase tracking-[.16em]" style="color: rgb(40, 100, 80); font-weight: 700; font-style: normal; font-size: 12px; letter-spacing: 0.12rem;">NEXT ACTIONS</p>
-          <h2 id="tasks-heading" data-template-id="tasks-heading-text" class="canva-text display-font mt-1 text-2xl font-bold" style="color: rgb(23, 52, 45); font-weight: 700; font-style: normal; font-size: 23px;">Task list</h2>
-         </div><i data-lucide="list-todo" class="text-[#286450]" width="22"></i>
-        </div>
-        <form id="task-form" class="mt-5 grid gap-3 md:grid-cols-2">
-         <div class="md:col-span-2"><label data-template-id="task-title-label" class="canva-text sr-only" for="task-title" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;">Task title</label> <input id="task-title" required="" maxlength="120" data-template-id="task-title-input" class="canva-input w-full rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm" type="text" placeholder="What needs your attention?" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;">
-         </div>
-         <div><label data-template-id="task-priority-label" class="canva-text sr-only" for="task-priority" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;">Task priority</label> <select id="task-priority" class="w-full rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm"> <option value="low">Low priority</option><option value="medium" selected="">Medium priority</option><option value="high">High priority</option> </select>
-         </div>
-         <div><label data-template-id="task-date-label" class="canva-text sr-only" for="task-date" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;">Due date</label> <input id="task-date" type="date" class="w-full rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm">
-         </div><button data-template-id="add-task-button" class="canva-button rounded-xl px-4 py-2.5 text-sm font-bold md:col-span-2" type="submit" style="background: rgb(40, 100, 80); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 15px;">Add task</button>
-        </form>
-        <div class="mt-4 flex items-center justify-between gap-3"><label data-template-id="task-filter-label" class="canva-text text-sm font-bold" for="task-filter" style="color: rgb(23, 52, 45); font-weight: 700; font-style: normal; font-size: 15px;">Show tasks for</label> <select id="task-filter" class="rounded-xl border border-[#dce2d8] bg-white px-3 py-2 text-sm"> <option value="all">All months</option> </select>
-        </div>
-        <div id="task-list" class="mt-3"></div>
-        <p id="tasks-empty" data-template-id="tasks-empty-state" class="canva-text mt-4 rounded-xl bg-[#f2f5ef] px-4 py-4 text-sm" style="background: rgb(242, 245, 239); color: rgb(104, 129, 122); font-weight: 400; font-style: normal; font-size: 15px;">Nothing queued yet. Add a small next step to make the plan feel real.</p>
-       </section>
-       <section data-template-id="habits-panel" class="canva-panel soft-card rounded-[1.5rem] p-5 sm:p-6 lg:col-span-2" aria-labelledby="habits-heading" style="background: rgb(255, 254, 249);">
-        <div class="flex items-start justify-between gap-4">
-         <div>
-          <p data-template-id="habits-kicker" class="canva-text text-xs font-bold uppercase tracking-[.16em]" style="color: rgb(211, 153, 72); font-weight: 700; font-style: normal; font-size: 12px; letter-spacing: 0.12rem;">STEADY PROGRESS</p>
-          <h2 id="habits-heading" data-template-id="habits-heading-text" class="canva-text display-font mt-1 text-2xl font-bold" style="color: rgb(23, 52, 45); font-weight: 700; font-style: normal; font-size: 23px;">Habits &amp; milestones</h2>
-         </div><i data-lucide="sparkles" class="text-[#d39948]" width="22"></i>
-        </div>
-        <form id="habit-form" class="mt-5 flex gap-2"><label data-template-id="habit-title-label" class="canva-text sr-only" for="habit-title" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;">Habit or milestone</label> <input id="habit-title" required="" maxlength="100" data-template-id="habit-title-input" class="canva-input min-w-0 flex-1 rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm" type="text" placeholder="e.g. Read 12 books" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;"> <button data-template-id="add-habit-button" class="canva-button rounded-xl px-3 py-2.5 text-sm font-bold" type="submit" style="background: rgb(243, 215, 193); color: rgb(23, 52, 45); font-weight: 700;"><i data-lucide="plus" width="18"></i></button>
-        </form>
-        <div id="habit-list" class="mt-4"></div>
-        <p id="habits-empty" data-template-id="habits-empty-state" class="canva-text mt-4 rounded-xl bg-[#f2f5ef] px-4 py-4 text-sm" style="background: rgb(242, 245, 239); color: rgb(104, 129, 122); font-weight: 400; font-style: normal; font-size: 15px;">Add a ritual, a milestone, or one thing you want to celebrate.</p>
-       </section>
-      </div>
-     </section>
-     <section id="month-view" class="view-hidden" aria-labelledby="month-heading">
-      <div class="mb-5 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-       <div>
-        <p data-template-id="month-kicker" class="canva-text text-xs font-bold uppercase tracking-[.16em]" style="color: rgb(40, 100, 80); font-weight: 700; font-style: normal; font-size: 12px; letter-spacing: 0.12rem;">MONTHLY FOCUS</p>
-        <h2 id="month-heading" class="display-font mt-1 text-4xl font-bold"></h2>
-       </div>
-       <div class="flex gap-2"><button id="previous-month" type="button" aria-label="Previous month" class="icon-btn border border-[#dce2d8] bg-white hover:bg-[#edf5ed]"><i data-lucide="chevron-left" width="18"></i></button> <button id="next-month" type="button" aria-label="Next month" class="icon-btn border border-[#dce2d8] bg-white hover:bg-[#edf5ed]"><i data-lucide="chevron-right" width="18"></i></button> <button id="back-overview" data-template-id="back-overview-button" type="button" class="canva-button rounded-full px-4 py-2 text-sm font-bold" style="background: rgb(220, 233, 222); color: rgb(23, 52, 45); font-weight: 700; font-style: normal; font-size: 15px;">Year view</button>
-       </div>
-      </div>
-      <div class="grid gap-6 lg:grid-cols-5">
-       <section data-template-id="calendar-panel" class="canva-panel soft-card rounded-[1.5rem] p-5 sm:p-6 lg:col-span-3" aria-label="Monthly calendar" style="background: rgb(255, 254, 249);">
-        <div class="grid grid-cols-7 gap-2 pb-2 text-center text-xs font-bold uppercase tracking-wide text-[#68817a]"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
-        </div>
-        <div id="month-calendar" class="calendar-large"></div>
-       </section>
-       <div class="space-y-6 lg:col-span-2">
-        <section data-template-id="focus-panel" class="canva-panel soft-card rounded-[1.5rem] p-5" aria-labelledby="focus-heading" style="background: rgb(255, 254, 249);">
-         <p data-template-id="focus-kicker" class="canva-text text-xs font-bold uppercase tracking-[.16em]" style="color: rgb(40, 100, 80); font-weight: 700; font-style: normal; font-size: 12px; letter-spacing: 0.12rem;">MAKE SPACE FOR</p>
-         <h3 id="focus-heading" data-template-id="focus-heading-text" class="canva-text display-font mt-1 text-2xl font-bold" style="color: rgb(23, 52, 45); font-weight: 700; font-style: normal; font-size: 18px;">Monthly focus</h3><label data-template-id="focus-label" class="canva-text sr-only" for="monthly-focus" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;">Monthly focus note</label> <textarea id="monthly-focus" data-template-id="focus-input" class="canva-input mt-4 min-h-28 w-full rounded-xl border border-[#dce2d8] bg-white p-3 text-sm" maxlength="1000" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;">What would make this month feel well spent?</textarea> <button id="save-focus" data-template-id="save-focus-button" type="button" class="canva-button mt-3 rounded-xl px-4 py-2.5 text-sm font-bold" style="background: rgb(220, 233, 222); color: rgb(23, 52, 45); font-weight: 700; font-style: normal; font-size: 15px;">Save focus</button>
+
+
+        <!-- MONTHS -->
+        <section id="months-grid"
+                 class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3"
+                 aria-label="Yearly calendar overview">
         </section>
-        <section data-template-id="events-panel" class="canva-panel soft-card rounded-[1.5rem] p-5" aria-labelledby="events-heading" style="background: rgb(255, 254, 249);">
-         <p data-template-id="events-kicker" class="canva-text text-xs font-bold uppercase tracking-[.16em]" style="color: rgb(40, 100, 80); font-weight: 700; font-style: normal; font-size: 12px; letter-spacing: 0.12rem;">KEY DATES</p>
-         <h3 id="events-heading" data-template-id="events-heading-text" class="canva-text display-font mt-1 text-2xl font-bold" style="color: rgb(23, 52, 45); font-weight: 700; font-style: normal; font-size: 18px;">Events</h3>
-         <form id="event-form" class="mt-4 space-y-3"><label data-template-id="event-title-label" class="canva-text sr-only" for="event-title" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;">Event title</label> <input id="event-title" required="" maxlength="120" data-template-id="event-title-input" class="canva-input w-full rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm" type="text" placeholder="Add a key event" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;"> <label data-template-id="event-date-label" class="canva-text sr-only" for="event-date" style="color: rgb(23, 52, 45); font-weight: 400; font-style: normal; font-size: 15px;">Event date</label> <input id="event-date" required="" type="date" class="w-full rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm"> <button data-template-id="add-event-button" class="canva-button w-full rounded-xl px-4 py-2.5 text-sm font-bold" type="submit" style="background: rgb(40, 100, 80); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 15px;">Add event</button>
-         </form>
-         <div id="event-list" class="mt-4"></div>
-         <p id="events-empty" data-template-id="events-empty-state" class="canva-text mt-4 rounded-xl bg-[#f2f5ef] px-4 py-4 text-sm" style="background: rgb(242, 245, 239); color: rgb(104, 129, 122); font-weight: 400; font-style: normal; font-size: 15px;">No events planned yet. Choose a day in the calendar to get started.</p>
-        </section>
-       </div>
-      </div>
-     </section>
+
+
+        <!-- GOALS + NOTES -->
+        <div class="mt-8 grid gap-6 lg:grid-cols-2">
+
+          <!-- GOALS -->
+          <section class="soft-card rounded-[1.5rem] p-5 sm:p-6">
+
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-xs font-bold uppercase tracking-[.16em]"
+                   style="color:#286450;">
+                  DIRECTION
+                </p>
+
+                <h2 class="display-font mt-1 text-2xl font-bold">
+                  Annual goals
+                </h2>
+              </div>
+
+              <i data-lucide="target"
+                 class="text-[#286450]"
+                 width="22">
+              </i>
+            </div>
+
+
+            <form id="goal-form"
+                  class="mt-5 grid gap-3 sm:grid-cols-[1fr_130px_auto]">
+
+              <input id="goal-title"
+                     required
+                     maxlength="100"
+                     class="w-full rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm"
+                     type="text"
+                     placeholder="Add a goal worth returning to">
+
+              <input id="goal-progress"
+                     min="0"
+                     max="100"
+                     value="0"
+                     class="w-full rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm"
+                     type="number">
+
+              <button type="submit"
+                      class="rounded-xl px-4 py-2.5 text-sm font-bold"
+                      style="background:#286450;color:white;">
+                Add goal
+              </button>
+
+            </form>
+
+            <div id="goal-list" class="mt-4"></div>
+
+            <p id="goals-empty"
+               class="mt-4 rounded-xl bg-[#f2f5ef] px-4 py-4 text-sm"
+               style="color:#68817a;">
+              Start with one meaningful goal. You can adjust progress whenever you need.
+            </p>
+
+          </section>
+
+
+          <!-- NOTES -->
+          <section class="soft-card rounded-[1.5rem] p-5 sm:p-6">
+
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-xs font-bold uppercase tracking-[.16em]"
+                   style="color:#286450;">
+                  REFLECTION
+                </p>
+
+                <h2 class="display-font mt-1 text-2xl font-bold">
+                  Notes for the year
+                </h2>
+              </div>
+
+              <i data-lucide="notebook-pen"
+                 class="text-[#286450]"
+                 width="22">
+              </i>
+            </div>
+
+
+            <textarea id="annual-notes"
+                      class="mt-5 min-h-44 w-full resize-y rounded-xl border border-[#dce2d8] bg-white p-3 text-sm leading-6"
+                      maxlength="3000"
+                      placeholder="Capture themes, ideas, reminders, or the feeling you want this year to hold."></textarea>
+
+
+            <div class="mt-3 flex items-center justify-between gap-4">
+
+              <p class="text-xs leading-5"
+                 style="color:#68817a;">
+                Keep this light — it is a living note, not a finished plan.
+              </p>
+
+              <button id="save-notes"
+                      type="button"
+                      class="shrink-0 rounded-xl px-4 py-2.5 text-sm font-bold"
+                      style="background:#dce9de;color:#17342d;">
+                Save notes
+              </button>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!-- TASKS + HABITS -->
+        <div class="mt-6 grid gap-6 lg:grid-cols-5">
+
+          <!-- TASKS -->
+          <section class="soft-card rounded-[1.5rem] p-5 sm:p-6 lg:col-span-3">
+
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-xs font-bold uppercase tracking-[.16em]"
+                   style="color:#286450;">
+                  NEXT ACTIONS
+                </p>
+
+                <h2 class="display-font mt-1 text-2xl font-bold">
+                  Task list
+                </h2>
+              </div>
+
+              <i data-lucide="list-todo"
+                 class="text-[#286450]"
+                 width="22">
+              </i>
+            </div>
+
+
+            <form id="task-form"
+                  class="mt-5 grid gap-3 md:grid-cols-2">
+
+              <input id="task-title"
+                     required
+                     maxlength="120"
+                     class="w-full rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm md:col-span-2"
+                     type="text"
+                     placeholder="What needs your attention?">
+
+              <select id="task-priority"
+                      class="w-full rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm">
+                <option value="low">Low priority</option>
+                <option value="medium" selected>Medium priority</option>
+                <option value="high">High priority</option>
+              </select>
+
+              <input id="task-date"
+                     type="date"
+                     class="w-full rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm">
+
+              <button type="submit"
+                      class="rounded-xl px-4 py-2.5 text-sm font-bold md:col-span-2"
+                      style="background:#286450;color:white;">
+                Add task
+              </button>
+
+            </form>
+
+
+            <div class="mt-4 flex items-center justify-between gap-3">
+
+              <label class="text-sm font-bold">
+                Show tasks for
+              </label>
+
+              <select id="task-filter"
+                      class="rounded-xl border border-[#dce2d8] bg-white px-3 py-2 text-sm">
+                <option value="all">All months</option>
+              </select>
+
+            </div>
+
+            <div id="task-list" class="mt-3"></div>
+
+            <p id="tasks-empty"
+               class="mt-4 rounded-xl bg-[#f2f5ef] px-4 py-4 text-sm"
+               style="color:#68817a;">
+              Nothing queued yet. Add a small next step to make the plan feel real.
+            </p>
+
+          </section>
+
+
+          <!-- HABITS -->
+          <section class="soft-card rounded-[1.5rem] p-5 sm:p-6 lg:col-span-2">
+
+            <div class="flex items-start justify-between gap-4">
+
+              <div>
+                <p class="text-xs font-bold uppercase tracking-[.16em]"
+                   style="color:#d39948;">
+                  STEADY PROGRESS
+                </p>
+
+                <h2 class="display-font mt-1 text-2xl font-bold">
+                  Habits & milestones
+                </h2>
+              </div>
+
+              <i data-lucide="sparkles"
+                 class="text-[#d39948]"
+                 width="22">
+              </i>
+
+            </div>
+
+
+            <form id="habit-form"
+                  class="mt-5 flex gap-2">
+
+              <input id="habit-title"
+                     required
+                     maxlength="100"
+                     class="min-w-0 flex-1 rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm"
+                     type="text"
+                     placeholder="e.g. Read 12 books">
+
+              <button type="submit"
+                      class="rounded-xl px-3 py-2.5 text-sm font-bold"
+                      style="background:#f3d7c1;color:#17342d;">
+                <i data-lucide="plus" width="18"></i>
+              </button>
+
+            </form>
+
+            <div id="habit-list" class="mt-4"></div>
+
+            <p id="habits-empty"
+               class="mt-4 rounded-xl bg-[#f2f5ef] px-4 py-4 text-sm"
+               style="color:#68817a;">
+              Add a ritual, a milestone, or one thing you want to celebrate.
+            </p>
+
+          </section>
+
+        </div>
+
+      </section>
+
+
+      <!-- MONTH VIEW -->
+      <section id="month-view"
+               class="view-hidden">
+
+        <div class="mb-5 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[.16em]"
+               style="color:#286450;">
+              MONTHLY FOCUS
+            </p>
+
+            <h2 id="month-heading"
+                class="display-font mt-1 text-4xl font-bold">
+            </h2>
+          </div>
+
+
+          <div class="flex gap-2">
+
+            <button id="previous-month"
+                    type="button"
+                    aria-label="Previous month"
+                    class="icon-btn border border-[#dce2d8] bg-white hover:bg-[#edf5ed]">
+              <i data-lucide="chevron-left" width="18"></i>
+            </button>
+
+            <button id="next-month"
+                    type="button"
+                    aria-label="Next month"
+                    class="icon-btn border border-[#dce2d8] bg-white hover:bg-[#edf5ed]">
+              <i data-lucide="chevron-right" width="18"></i>
+            </button>
+
+            <button id="back-overview"
+                    type="button"
+                    class="rounded-full px-4 py-2 text-sm font-bold"
+                    style="background:#dce9de;color:#17342d;">
+              Year view
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <div class="grid gap-6 lg:grid-cols-5">
+
+          <!-- CALENDAR -->
+          <section class="soft-card rounded-[1.5rem] p-5 sm:p-6 lg:col-span-3">
+
+            <div class="grid grid-cols-7 gap-2 pb-2 text-center text-xs font-bold uppercase tracking-wide text-[#68817a]">
+              <span>Sun</span>
+              <span>Mon</span>
+              <span>Tue</span>
+              <span>Wed</span>
+              <span>Thu</span>
+              <span>Fri</span>
+              <span>Sat</span>
+            </div>
+
+            <div id="month-calendar"
+                 class="calendar-large">
+            </div>
+
+          </section>
+
+
+          <div class="space-y-6 lg:col-span-2">
+
+            <!-- MONTHLY FOCUS -->
+            <section class="soft-card rounded-[1.5rem] p-5">
+
+              <p class="text-xs font-bold uppercase tracking-[.16em]"
+                 style="color:#286450;">
+                MAKE SPACE FOR
+              </p>
+
+              <h3 class="display-font mt-1 text-2xl font-bold">
+                Monthly focus
+              </h3>
+
+              <textarea id="monthly-focus"
+                        class="mt-4 min-h-28 w-full rounded-xl border border-[#dce2d8] bg-white p-3 text-sm"
+                        maxlength="1000"
+                        placeholder="What would make this month feel well spent?"></textarea>
+
+              <button id="save-focus"
+                      type="button"
+                      class="mt-3 rounded-xl px-4 py-2.5 text-sm font-bold"
+                      style="background:#dce9de;color:#17342d;">
+                Save focus
+              </button>
+
+            </section>
+
+
+            <!-- EVENTS -->
+            <section class="soft-card rounded-[1.5rem] p-5">
+
+              <p class="text-xs font-bold uppercase tracking-[.16em]"
+                 style="color:#286450;">
+                KEY DATES
+              </p>
+
+              <h3 class="display-font mt-1 text-2xl font-bold">
+                Events
+              </h3>
+
+
+              <form id="event-form"
+                    class="mt-4 space-y-3">
+
+                <input id="event-title"
+                       required
+                       maxlength="120"
+                       class="w-full rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm"
+                       type="text"
+                       placeholder="Add a key event">
+
+                <input id="event-date"
+                       required
+                       type="date"
+                       class="w-full rounded-xl border border-[#dce2d8] bg-white px-3 py-2.5 text-sm">
+
+                <button type="submit"
+                        class="w-full rounded-xl px-4 py-2.5 text-sm font-bold"
+                        style="background:#286450;color:white;">
+                  Add event
+                </button>
+
+              </form>
+
+
+              <div id="event-list"
+                   class="mt-4">
+              </div>
+
+              <p id="events-empty"
+                 class="mt-4 rounded-xl bg-[#f2f5ef] px-4 py-4 text-sm"
+                 style="color:#68817a;">
+                No events planned yet. Choose a day in the calendar to get started.
+              </p>
+
+            </section>
+
+          </div>
+        </div>
+      </section>
+
     </div>
-   </main>
-   <div id="toast" class="toast fixed bottom-5 left-1/2 z-50 -translate-x-1/2 rounded-full bg-[#17342d] px-5 py-3 text-sm font-bold text-white shadow-xl" role="status" aria-live="polite"></div>
+  </main>
+
+
+  <!-- TOAST -->
+  <div id="toast"
+       class="toast fixed bottom-5 left-1/2 z-50 -translate-x-1/2 rounded-full bg-[#17342d] px-5 py-3 text-sm font-bold text-white shadow-xl"
+       role="status"
+       aria-live="polite">
   </div>
-  <script src="/_sdk/22383239e6d7279e.editing_sdk.js" integrity="sha512-qvtUeUgPbBuWkcjob5tx6AGU1PQHkx4zgZWqqpaXOQqF0FGg35lPkDg2Eh+f2u6Np/H74EENvDhGRPcQgwZA+Q=="></script>
-  <script>
-    const now = new Date();
-    const months = Array.from({length: 12}, (_, i) => new Intl.DateTimeFormat('en', {month:'long'}).format(new Date(2026, i, 1)));
-    const shortMonths = Array.from({length: 12}, (_, i) => new Intl.DateTimeFormat('en', {month:'short'}).format(new Date(2026, i, 1)));
-    let selectedYear = now.getFullYear(), selectedMonth = now.getMonth(), selectedDay = now.getDate();
-    let records = [], settingsRecord = null, initialized = false, editingTask = null;
 
-    const $ = id => document.getElementById(id);
-    const escapeHTML = value => String(value || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
-    const relevant = type => records.filter(r => r.type === type && r.year === selectedYear);
-    const dateString = (year, month, day) => `${year}-${String(month + 1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
-    const showToast = message => { const t = $('toast'); t.textContent = message; t.classList.add('show'); clearTimeout(showToast.timer); showToast.timer = setTimeout(() => t.classList.remove('show'), 2600); };
-    const setBusy = (button, busy) => { button.disabled = busy; button.style.opacity = busy ? '.6' : '1'; };
+</div>
 
-    function getRecord(type, month = null) {
-      return relevant(type).find(r => month === null ? r.month === -1 : r.month === month);
-    }
-    function saveSelectedYear() {
-      if (!initialized) return;
-      const item = {type:'settings', year:selectedYear, month:-1, day:0, title:String(selectedYear), description:'', status:'active', priority:'', progress:0, completed:false, created_at:new Date().toISOString()};
-      if (settingsRecord) return window.dataSdk.update({...settingsRecord, ...item});
-      return window.dataSdk.create(item);
-    }
-    async function create(record, button) {
-  if (records.length >= 999) {
-    showToast('Planner limit reached. Delete an item to add another.');
-    return { isOk: false };
-  }
 
-  if (button) setBusy(button, true);
+<!-- DATA SDK -->
+<script src="/_sdk/8de366929c5f3b48.data_sdk.js"></script>
 
-  let result = { isOk: false };
 
-  try {
-    result = await window.dataSdk.create(record);
-  } catch (error) {
-    console.error('Save error:', error);
-  }
+<script>
+/* =========================================================
+   YEARLY PLANNER JAVASCRIPT
+   ========================================================= */
 
-  if (button) setBusy(button, false);
+const now = new Date();
 
-  if (!result.isOk) {
-    // Save a local copy if the online data service is unavailable
-    const localItems = JSON.parse(localStorage.getItem('planner-items') || '[]');
-    localItems.push(record);
-    localStorage.setItem('planner-items', JSON.stringify(localItems));
-  }
+const months = Array.from(
+  { length: 12 },
+  (_, i) =>
+    new Intl.DateTimeFormat("en", { month: "long" })
+      .format(new Date(2026, i, 1))
+);
 
-  return result;
+let selectedYear = now.getFullYear();
+let selectedMonth = now.getMonth();
+let selectedDay = now.getDate();
+
+let records = [];
+let settingsRecord = null;
+let initialized = false;
+let editingTask = null;
+
+const $ = id => document.getElementById(id);
+
+
+/* =========================================================
+   HELPERS
+   ========================================================= */
+
+function escapeHTML(value) {
+  return String(value ?? "").replace(
+    /[&<>"']/g,
+    char => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#039;"
+    }[char])
+  );
 }
-    }
-    async function update(record, button) {
-      if (button) setBusy(button, true);
-      const result = await window.dataSdk.update(record);
-      if (button) setBusy(button, false);
-      if (!result.isOk) showToast('Could not update that item. Please try again.');
-      return result;
-    }
-    async function remove(record) {
-      const result = await window.dataSdk.delete(record);
-      if (!result.isOk) showToast('Could not remove that item. Please try again.');
-    }
-    function renderHeader() {
-      $('year-label').textContent = selectedYear;
-      $('overview-tab').className = `canva-button rounded-full px-4 py-2 text-sm font-bold ${$('overview-view').classList.contains('view-hidden') ? 'bg-transparent text-[#68817a]' : 'bg-[#286450] text-white'}`;
-      $('month-tab').className = `canva-button rounded-full px-4 py-2 text-sm font-bold ${$('month-view').classList.contains('view-hidden') ? 'bg-transparent text-[#68817a]' : 'bg-[#286450] text-white'}`;
-    }
-    function miniCalendar(month) {
-      const first = new Date(selectedYear, month, 1).getDay(), days = new Date(selectedYear, month + 1, 0).getDate();
-      const eventDays = new Set(relevant('event').filter(e => e.month === month).map(e => e.day));
-      let html = ['<span class="font-bold">S</span><span class="font-bold">M</span><span class="font-bold">T</span><span class="font-bold">W</span><span class="font-bold">T</span><span class="font-bold">F</span><span class="font-bold">S</span>'];
-      for (let i=0;i<first;i++) html.push('<span></span>');
-      for (let day=1;day<=days;day++) {
-        const today = selectedYear === now.getFullYear() && month === now.getMonth() && day === now.getDate();
-        html.push(`<span class="${today?'today ':''}${eventDays.has(day)?'has-event':''}">${day}</span>`);
-      }
-      return html.join('');
-    }
-    function renderMonths() {
-      const events = relevant('event');
-      $('months-grid').innerHTML = months.map((name, month) => {
-        const list = events.filter(e => e.month === month).slice(0,2);
-        return `<button type="button" class="month-card soft-card rounded-2xl p-4 text-left" data-month="${month}" aria-label="Open ${name} ${selectedYear}">
-          <div class="flex items-center justify-between"><span class="display-font text-xl font-bold">${name}</span><i data-lucide="arrow-up-right" width="16"></i></div>
-          <div class="calendar-mini mt-3">${miniCalendar(month)}</div>
-          <div class="mt-3 min-h-9 border-t border-[#e6ebe4] pt-2 text-xs text-[#68817a]">${list.length ? list.map(e=>`<p class="truncate">• ${escapeHTML(e.title)}</p>`).join('') : '<p>No key events yet</p>'}</div>
-        </button>`;
-      }).join('');
-      $('months-grid').querySelectorAll('[data-month]').forEach(el => el.addEventListener('click', () => openMonth(Number(el.dataset.month))));
-      lucide.createIcons();
-    }
-    function renderGoals() {
-      const goals = relevant('goal');
-      $('goals-empty').classList.toggle('hidden', goals.length > 0);
-      $('goal-list').innerHTML = goals.map(g => `<div class="record-item py-4" data-id="${g.__backendId}">
-        <div class="flex gap-3"><input class="goal-check mt-1 h-4 w-4 accent-[#286450]" type="checkbox" ${g.status === 'done' ? 'checked':''} aria-label="Mark ${escapeHTML(g.title)} complete">
-        <div class="min-w-0 flex-1"><input class="goal-name w-full bg-transparent font-bold outline-none" value="${escapeHTML(g.title)}" aria-label="Goal title">
-          <div class="mt-2 flex items-center gap-3"><div class="h-2 flex-1 overflow-hidden rounded-full bg-[#e6eee5]"><div class="h-full rounded-full bg-[#286450]" style="width:${Math.min(100,Math.max(0,g.progress))}%"></div></div><span class="text-xs font-bold">${g.progress}%</span></div>
-          <div class="mt-2 flex items-center justify-between gap-2"><input class="goal-range w-32 accent-[#286450]" type="range" min="0" max="100" value="${g.progress}" aria-label="Progress for ${escapeHTML(g.title)}"><span class="text-xs uppercase tracking-wide text-[#68817a]">${escapeHTML(g.status || 'on-track')}</span></div>
-        </div><button class="delete-goal icon-btn text-[#b9524b]" aria-label="Delete ${escapeHTML(g.title)}"><i data-lucide="trash-2" width="16"></i></button></div></div>`).join('');
-      $('goal-list').querySelectorAll('[data-id]').forEach(el => {
-        const record = goals.find(g => g.__backendId === el.dataset.id);
-        el.querySelector('.goal-check').addEventListener('change', e => update({...record, status:e.target.checked?'done':'on-track', progress:e.target.checked?100:record.progress}));
-        el.querySelector('.goal-range').addEventListener('change', e => update({...record, progress:Number(e.target.value), status:Number(e.target.value)===100?'done':'on-track'}));
-        el.querySelector('.goal-name').addEventListener('change', e => update({...record, title:e.target.value.trim() || record.title}));
-        el.querySelector('.delete-goal').addEventListener('click', () => remove(record));
-      });
-      lucide.createIcons();
-    }
-    function renderTasks() {
-      const filter = $('task-filter').value;
-      const tasks = relevant('task').filter(t => filter === 'all' || t.month === Number(filter));
-      $('tasks-empty').classList.toggle('hidden', tasks.length > 0);
-      $('task-list').innerHTML = tasks.sort((a,b)=>Number(a.completed)-Number(b.completed)).map(t => `<div class="record-item flex items-center gap-3 py-3" data-id="${t.__backendId}">
-        <input class="task-check h-4 w-4 accent-[#286450]" type="checkbox" ${t.completed?'checked':''} aria-label="Complete ${escapeHTML(t.title)}">
-        <div class="min-w-0 flex-1"><p class="font-bold ${t.completed?'line-through text-[#68817a]':''}">${escapeHTML(t.title)}</p><p class="mt-1 text-xs text-[#68817a]">${t.description ? `Due ${escapeHTML(t.description)} · ` : ''}${escapeHTML(t.priority)} priority</p></div>
-        <button class="edit-task icon-btn text-[#286450]" aria-label="Edit ${escapeHTML(t.title)}"><i data-lucide="pencil" width="16"></i></button>
-        <button class="delete-task icon-btn text-[#b9524b]" aria-label="Delete ${escapeHTML(t.title)}"><i data-lucide="trash-2" width="16"></i></button>
-      </div>`).join('');
-      $('task-list').querySelectorAll('[data-id]').forEach(el => {
-        const record = tasks.find(t => t.__backendId === el.dataset.id);
-        el.querySelector('.task-check').addEventListener('change', e => update({...record, completed:e.target.checked, status:e.target.checked?'done':'active'}));
-        el.querySelector('.delete-task').addEventListener('click', () => remove(record));
-        el.querySelector('.edit-task').addEventListener('click', () => {
-          editingTask = record; $('task-title').value = record.title; $('task-priority').value = record.priority || 'medium'; $('task-date').value = record.description || '';
-          $('task-title').focus(); showToast('Editing task — save your changes.');
-        });
-      });
-      lucide.createIcons();
-    }
-    function renderHabits() {
-      const habits = relevant('habit');
-      $('habits-empty').classList.toggle('hidden', habits.length > 0);
-      $('habit-list').innerHTML = habits.map(h => `<div class="record-item flex items-center gap-3 py-3" data-id="${h.__backendId}">
-        <input class="habit-check h-4 w-4 accent-[#286450]" type="checkbox" ${h.completed?'checked':''} aria-label="Mark ${escapeHTML(h.title)} complete">
-        <input class="habit-name min-w-0 flex-1 bg-transparent text-sm font-bold outline-none ${h.completed?'line-through text-[#68817a]':''}" value="${escapeHTML(h.title)}" aria-label="Habit or milestone name">
-        <button class="delete-habit icon-btn text-[#b9524b]" aria-label="Delete ${escapeHTML(h.title)}"><i data-lucide="x" width="16"></i></button>
-      </div>`).join('');
-      $('habit-list').querySelectorAll('[data-id]').forEach(el => {
-        const record = habits.find(h => h.__backendId === el.dataset.id);
-        el.querySelector('.habit-check').addEventListener('change', e => update({...record, completed:e.target.checked, status:e.target.checked?'done':'active'}));
-        el.querySelector('.habit-name').addEventListener('change', e => update({...record, title:e.target.value.trim() || record.title}));
-        el.querySelector('.delete-habit').addEventListener('click', () => remove(record));
-      });
-      lucide.createIcons();
-    }
-    function renderMonth() {
-      $('month-heading').textContent = `${months[selectedMonth]} ${selectedYear}`;
-      const first = new Date(selectedYear, selectedMonth, 1).getDay(), days = new Date(selectedYear, selectedMonth+1, 0).getDate();
-      const eventDays = new Set(relevant('event').filter(e=>e.month===selectedMonth).map(e=>e.day));
-      let html = '';
-      for(let i=0;i<first;i++) html += '<span></span>';
-      for(let d=1;d<=days;d++) {
-        const isToday = selectedYear===now.getFullYear() && selectedMonth===now.getMonth() && d===now.getDate();
-        html += `<button type="button" data-day="${d}" class="${d===selectedDay?'selected-day ':''}${isToday?'today ':''}${eventDays.has(d)?'event-day':''}" aria-label="${months[selectedMonth]} ${d}"><span>${d}</span></button>`;
-      }
-      $('month-calendar').innerHTML = html;
-      $('month-calendar').querySelectorAll('[data-day]').forEach(btn=>btn.addEventListener('click', ()=> { selectedDay=Number(btn.dataset.day); $('event-date').value=dateString(selectedYear,selectedMonth,selectedDay); renderMonth(); }));
-const focus = getRecord('focus', selectedMonth);
-const localFocus = localStorage.getItem(`monthly-focus-${selectedYear}-${selectedMonth}`);
-$('monthly-focus').value = localFocus || (focus ? focus.description : '');
-      const events = relevant('event').filter(e=>e.month===selectedMonth).sort((a,b)=>a.day-b.day);
-      $('events-empty').classList.toggle('hidden', events.length > 0);
-      $('event-list').innerHTML = events.map(e=>`<div class="record-item flex items-center justify-between gap-3 py-3"><p class="min-w-0 text-sm"><span class="mr-2 font-bold text-[#286450]">${e.day}</span>${escapeHTML(e.title)}</p><button class="event-delete icon-btn text-[#b9524b]" data-id="${e.__backendId}" aria-label="Delete ${escapeHTML(e.title)}"><i data-lucide="trash-2" width="16"></i></button></div>`).join('');
-      $('event-list').querySelectorAll('.event-delete').forEach(btn=>btn.addEventListener('click',()=>remove(events.find(e=>e.__backendId===btn.dataset.id))));
-      $('event-date').value = dateString(selectedYear,selectedMonth,selectedDay);
-      lucide.createIcons();
-    }
-    function renderAll() {
-      const settings = records.filter(r => r.type === 'settings').sort((a,b)=>new Date(b.created_at)-new Date(a.created_at))[0];
-      settingsRecord = settings || null;
-      if (!initialized && settings) { selectedYear = Number(settings.title) || selectedYear; initialized = true; }
-      if (!initialized) initialized = true;
-      $('task-filter').innerHTML = '<option value="all">All months</option>' + months.map((m,i)=>`<option value="${i}">${m}</option>`).join('');
-      renderHeader(); renderMonths(); renderGoals(); renderTasks(); renderHabits(); renderMonth();
-    }
-    function openMonth(month) {
-      selectedMonth = month; selectedDay = 1;
-      $('overview-view').classList.add('view-hidden'); $('month-view').classList.remove('view-hidden');
-      renderHeader(); renderMonth(); window.scrollTo({top:0,behavior:'smooth'});
-    }
-    function openOverview() {
-      $('month-view').classList.add('view-hidden'); $('overview-view').classList.remove('view-hidden'); renderHeader();
-    }
-    document.addEventListener('DOMContentLoaded', async () => {
-      lucide.createIcons();
-      $('overview-tab').addEventListener('click',openOverview); $('month-tab').addEventListener('click',()=>openMonth(selectedMonth)); $('back-overview').addEventListener('click',openOverview);
-      $('previous-year').addEventListener('click',async()=>{selectedYear--; await saveSelectedYear(); renderAll();});
-      $('next-year').addEventListener('click',async()=>{selectedYear++; await saveSelectedYear(); renderAll();});
-      $('current-year').addEventListener('click',async()=>{selectedYear=now.getFullYear(); selectedMonth=now.getMonth(); await saveSelectedYear(); renderAll();});
-      $('previous-month').addEventListener('click',()=>openMonth((selectedMonth+11)%12));
-      $('next-month').addEventListener('click',()=>openMonth((selectedMonth+1)%12));
-      $('goal-form').addEventListener('submit',async e=>{e.preventDefault(); const b=e.submitter, title=$('goal-title').value.trim(); if(!title)return; const result=await create({type:'goal',year:selectedYear,month:-1,day:0,title,description:'',status:'on-track',priority:'',progress:Number($('goal-progress').value)||0,completed:false,created_at:new Date().toISOString()},b); if(result?.isOk){e.target.reset();showToast('Goal added.');}});
-      $('task-form').addEventListener('submit',async e=>{e.preventDefault();const b=e.submitter,title=$('task-title').value.trim(),date=$('task-date').value;if(!title)return;const record={type:'task',year:selectedYear,month:date?new Date(date+'T00:00:00').getMonth():-1,day:date?new Date(date+'T00:00:00').getDate():0,title,description:date,status:'active',priority:$('task-priority').value,progress:0,completed:false,created_at:new Date().toISOString()};const result=editingTask?await update({...editingTask,...record},b):await create(record,b);if(result?.isOk){e.target.reset();editingTask=null;showToast('Task saved.');}});
-      $('task-filter').addEventListener('change',renderTasks);
-      $('habit-form').addEventListener('submit',async e=>{e.preventDefault();const b=e.submitter,title=$('habit-title').value.trim();if(!title)return;const result=await create({type:'habit',year:selectedYear,month:-1,day:0,title,description:'',status:'active',priority:'',progress:0,completed:false,created_at:new Date().toISOString()},b);if(result?.isOk){e.target.reset();showToast('Tracker item added.');}});
-      $('event-form').addEventListener('submit',async e=>{e.preventDefault();const b=e.submitter,title=$('event-title').value.trim(),date=new Date($('event-date').value+'T00:00:00');if(!title||isNaN(date))return;const result=await create({type:'event',year:selectedYear,month:date.getMonth(),day:date.getDate(),title,description:'',status:'active',priority:'',progress:0,completed:false,created_at:new Date().toISOString()},b);if(result?.isOk){e.target.reset();$('event-date').value=dateString(selectedYear,selectedMonth,selectedDay);showToast('Event added.');}});
-      $('save-notes').addEventListener('click',async e=>{const existing=getRecord('note'), text=$('annual-notes').value.trim(), b=e.currentTarget;if(existing) await update({...existing,description:text},b); else await create({type:'note',year:selectedYear,month:-1,day:0,title:'Annual notes',description:text,status:'active',priority:'',progress:0,completed:false,created_at:new Date().toISOString()},b);showToast('Notes saved.');});
-$('save-focus').addEventListener('click', async e => {
-  const button = e.currentTarget;
-  const text = $('monthly-focus').value.trim();
-  const existing = getRecord('focus', selectedMonth);
 
-  setBusy(button, true);
 
-  let result;
+function dateString(year, month, day) {
+  return `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
+
+
+function showToast(message) {
+  const toast = $("toast");
+
+  toast.textContent = message;
+  toast.classList.add("show");
+
+  clearTimeout(showToast.timer);
+
+  showToast.timer = setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2600);
+}
+
+
+function setBusy(button, busy) {
+  if (!button) return;
+
+  button.disabled = busy;
+  button.style.opacity = busy ? ".6" : "1";
+}
+
+
+function relevant(type) {
+  return records.filter(
+    record =>
+      record.type === type &&
+      Number(record.year) === Number(selectedYear)
+  );
+}
+
+
+function getRecord(type, month = null) {
+  return relevant(type).find(record => {
+    if (month === null) {
+      return Number(record.month) === -1;
+    }
+
+    return Number(record.month) === Number(month);
+  });
+}
+
+
+/* =========================================================
+   LOCAL STORAGE
+   ========================================================= */
+
+const STORAGE_KEY = "yearly-planner-records";
+
+
+function loadLocalRecords() {
+  try {
+    const saved = JSON.parse(
+      localStorage.getItem(STORAGE_KEY) || "[]"
+    );
+
+    return Array.isArray(saved) ? saved : [];
+  } catch (error) {
+    console.error("Could not load local records:", error);
+    return [];
+  }
+}
+
+
+function saveLocalRecords() {
+  try {
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify(records)
+    );
+  } catch (error) {
+    console.error("Could not save local records:", error);
+  }
+}
+
+
+function makeLocalId() {
+  return (
+    "local_" +
+    Date.now() +
+    "_" +
+    Math.random().toString(36).slice(2, 9)
+  );
+}
+
+
+/* =========================================================
+   DATA SDK SAFE FUNCTIONS
+   ========================================================= */
+
+async function create(record, button = null) {
+
+  if (button) {
+    setBusy(button, true);
+  }
+
+  let success = false;
 
   try {
-    if (existing) {
-      result = await window.dataSdk.update({
-        ...existing,
-        description: text
-      });
-    } else {
-      result = await window.dataSdk.create({
-        type: 'focus',
-        year: selectedYear,
-        month: selectedMonth,
-        day: 0,
-        title: 'Monthly focus',
-        description: text,
-        status: 'active',
-        priority: '',
-        progress: 0,
-        completed: false,
-        created_at: new Date().toISOString()
-      });
+
+    if (
+      window.dataSdk &&
+      typeof window.dataSdk.create === "function"
+    ) {
+
+      const result = await window.dataSdk.create(record);
+
+      if (result && result.isOk) {
+        success = true;
+      }
+
     }
+
   } catch (error) {
-    console.error('Focus save error:', error);
-    result = { isOk: false };
+    console.error("Online create error:", error);
   }
 
-  setBusy(button, false);
 
-  if (result && result.isOk) {
-    showToast('Monthly focus saved.');
+  /*
+     IMPORTANT:
+     Always keep a local copy too.
+     This makes the planner continue working even
+     if the data service is temporarily unavailable.
+  */
+
+  if (!success) {
+
+    const localRecord = {
+      ...record,
+      __backendId: makeLocalId(),
+      __localOnly: true
+    };
+
+    records.push(localRecord);
+    saveLocalRecords();
+
+    if (button) {
+      setBusy(button, false);
+    }
+
+    renderAll();
+
+    return {
+      isOk: true,
+      localOnly: true
+    };
+  }
+
+
+  if (button) {
+    setBusy(button, false);
+  }
+
+  return {
+    isOk: true
+  };
+}
+
+
+async function update(record, button = null) {
+
+  if (button) {
+    setBusy(button, true);
+  }
+
+  let success = false;
+
+  try {
+
+    if (
+      record.__localOnly ||
+      String(record.__backendId || "").startsWith("local_")
+    ) {
+
+      const index = records.findIndex(
+        item => item.__backendId === record.__backendId
+      );
+
+      if (index !== -1) {
+        records[index] = {
+          ...records[index],
+          ...record
+        };
+
+        saveLocalRecords();
+        success = true;
+      }
+
+    } else if (
+      window.dataSdk &&
+      typeof window.dataSdk.update === "function"
+    ) {
+
+      const result = await window.dataSdk.update(record);
+
+      if (result && result.isOk) {
+        success = true;
+      }
+    }
+
+  } catch (error) {
+    console.error("Update error:", error);
+  }
+
+
+  if (button) {
+    setBusy(button, false);
+  }
+
+
+  if (!success) {
+    showToast("Could not update that item.");
+    return {
+      isOk: false
+    };
+  }
+
+
+  /*
+     Keep local copy updated as well.
+  */
+
+  const index = records.findIndex(
+    item => item.__backendId === record.__backendId
+  );
+
+  if (index !== -1) {
+    records[index] = {
+      ...records[index],
+      ...record
+    };
+
+    saveLocalRecords();
+  }
+
+  renderAll();
+
+  return {
+    isOk: true
+  };
+}
+
+
+async function remove(record) {
+
+  let success = false;
+
+  try {
+
+    if (
+      record.__localOnly ||
+      String(record.__backendId || "").startsWith("local_")
+    ) {
+
+      success = true;
+
+    } else if (
+      window.dataSdk &&
+      typeof window.dataSdk.delete === "function"
+    ) {
+
+      const result = await window.dataSdk.delete(record);
+
+      if (result && result.isOk) {
+        success = true;
+      }
+    }
+
+  } catch (error) {
+    console.error("Delete error:", error);
+  }
+
+
+  if (!success) {
+    showToast("Could not remove that item.");
+    return;
+  }
+
+
+  records = records.filter(
+    item => item.__backendId !== record.__backendId
+  );
+
+  saveLocalRecords();
+
+  renderAll();
+
+  showToast("Item deleted.");
+}
+
+
+/* =========================================================
+   SAVE SELECTED YEAR
+   ========================================================= */
+
+async function saveSelectedYear() {
+
+  const existing = records.find(
+    record =>
+      record.type === "settings" &&
+      Number(record.year) === Number(selectedYear)
+  );
+
+  const item = {
+    type: "settings",
+    year: selectedYear,
+    month: -1,
+    day: 0,
+    title: String(selectedYear),
+    description: "",
+    status: "active",
+    priority: "",
+    progress: 0,
+    completed: false,
+    created_at: new Date().toISOString()
+  };
+
+
+  if (existing) {
+
+    await update({
+      ...existing,
+      ...item
+    });
+
   } else {
-    showToast('Focus could not be saved.');
+
+    await create(item);
+
   }
-});
-  </script>
- 
-</body></html>
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+function renderHeader() {
+
+  $("year-label").textContent = selectedYear;
+
+  const overviewVisible =
+    !$("overview-view").classList.contains("view-hidden");
+
+  $("overview-tab").className =
+    overviewVisible
+      ? "rounded-full px-4 py-2 text-sm font-bold bg-[#286450] text-white"
+      : "rounded-full px-4 py-2 text-sm font-bold bg-transparent text-[#68817a]";
+
+
+  $("month-tab").className =
+    overviewVisible
+      ? "rounded-full px-4 py-2 text-sm font-bold bg-transparent text-[#68817a]"
+      : "rounded-full px-4 py-2 text-sm font-bold bg-[#286450] text-white";
+}
+
+
+/* =========================================================
+   MINI CALENDAR
+   ========================================================= */
+
+function miniCalendar(month) {
+
+  const firstDay =
+    new Date(selectedYear, month, 1).getDay();
+
+  const days =
+    new Date(selectedYear, month + 1, 0).getDate();
+
+
+  const eventDays = new Set(
+    relevant("event")
+      .filter(event => Number(event.month) === month)
+      .map(event => Number(event.day))
+  );
+
+
+  let html =
+    '<span class="font-bold">S</span>' +
+    '<span class="font-bold">M</span>' +
+    '<span class="font-bold">T</span>' +
+    '<span class="font-bold">W</span>' +
+    '<span class="font-bold">T</span>' +
+    '<span class="font-bold">F</span>' +
+    '<span class="font-bold">S</span>';
+
+
+  for (let i = 0; i < firstDay; i++) {
+    html += "<span></span>";
+  }
+
+
+  for (let day = 1; day <= days; day++) {
+
+    const today =
+      selectedYear === now.getFullYear() &&
+      month === now.getMonth() &&
+      day === now.getDate();
+
+
+    const classes = [
+      today ? "today" : "",
+      eventDays.has(day) ? "has-event" : ""
+    ].join(" ");
+
+
+    html += `
+      <span class="${classes}">
+        ${day}
+      </span>
+    `;
+  }
+
+
+  return html;
+}
+
+
+/* =========================================================
+   MONTH CARDS
+   ========================================================= */
+
+function renderMonths() {
+
+  const events = relevant("event");
+
+
+  $("months-grid").innerHTML =
+    months.map((name, month) => {
+
+      const list = events
+        .filter(event => Number(event.month) === month)
+        .slice(0, 2);
+
+
+      return `
+        <button
+          type="button"
+          class="month-card soft-card rounded-2xl p-4 text-left"
+          data-month="${month}"
+          aria-label="Open ${name} ${selectedYear}"
+        >
+
+          <div class="flex items-center justify-between">
+
+            <span class="display-font text-xl font-bold">
+              ${name}
+            </span>
+
+            <i data-lucide="arrow-up-right" width="16"></i>
+
+          </div>
+
+
+          <div class="calendar-mini mt-3">
+            ${miniCalendar(month)}
+          </div>
+
+
+          <div class="mt-3 min-h-9 border-t border-[#e6ebe4] pt-2 text-xs text-[#68817a]">
+
+            ${
+              list.length
+                ? list
+                    .map(
+                      event =>
+                        `<p class="truncate">• ${escapeHTML(event.title)}</p>`
+                    )
+                    .join("")
+                : "<p>No key events yet</p>"
+            }
+
+          </div>
+
+        </button>
+      `;
+
+    }).join("");
+
+
+  $("months-grid")
+    .querySelectorAll("[data-month]")
+    .forEach(button => {
+
+      button.addEventListener(
+        "click",
+        () => openMonth(Number(button.dataset.month))
+      );
+
+    });
+
+
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+}
+
+
+/* =========================================================
+   GOALS
+   ========================================================= */
+
+function renderGoals() {
+
+  const goals = relevant("goal");
+
+
+  $("goals-empty").classList.toggle(
+    "hidden",
+    goals.length > 0
+  );
+
+
+  $("goal-list").innerHTML =
+    goals.map(goal => {
+
+      const progress = Math.min(
+        100,
+        Math.max(0, Number(goal.progress) || 0)
+      );
+
+
+      return `
+        <div
+          class="record-item py-4"
+          data-id="${escapeHTML(goal.__backendId)}"
+        >
+
+          <div class="flex gap-3">
+
+            <input
+              class="goal-check mt-1 h-4 w-4 accent-[#286450]"
+              type="checkbox"
+              ${goal.status === "done" ? "checked" : ""}
+            >
+
+
+            <div class="min-w-0 flex-1">
+
+              <input
+                class="goal-name w-full bg-transparent font-bold outline-none"
+                value="${escapeHTML(goal.title)}"
+              >
+
+
+              <div class="mt-2 flex items-center gap-3">
+
+                <div class="h-2 flex-1 overflow-hidden rounded-full bg-[#e6eee5]">
+
+                  <div
+                    class="h-full rounded-full bg-[#286450]"
+                    style="width:${progress}%">
+                  </div>
+
+                </div>
+
+                <span class="text-xs font-bold">
+                  ${progress}%
+                </span>
+
+              </div>
+
+
+              <div class="mt-2 flex items-center justify-between gap-2">
+
+                <input
+                  class="goal-range w-32 accent-[#286450]"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="${progress}"
+                >
+
+                <span class="text-xs uppercase tracking-wide text-[#68817a]">
+                  ${escapeHTML(goal.status || "on-track")}
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <button
+              class="delete-goal icon-btn text-[#b9524b]"
+              type="button"
+              aria-label="Delete goal"
+            >
+              <i data-lucide="trash-2" width="16"></i>
+            </button>
+
+          </div>
+
+        </div>
+      `;
+
+    }).join("");
+
+
+  $("goal-list")
+    .querySelectorAll("[data-id]")
+    .forEach(element => {
+
+      const record =
+        goals.find(
+          goal =>
+            goal.__backendId ===
+            element.dataset.id
+        );
+
+
+      if (!record) return;
+
+
+      element
+        .querySelector(".goal-check")
+        .addEventListener("change", event => {
+
+          update({
+            ...record,
+            status: event.target.checked
+              ? "done"
+              : "on-track",
+            progress: event.target.checked
+              ? 100
+              : record.progress
+          });
+
+        });
+
+
+      element
+        .querySelector(".goal-range")
+        .addEventListener("change", event => {
+
+          const progress =
+            Number(event.target.value);
+
+          update({
+            ...record,
+            progress,
+            status:
+              progress === 100
+                ? "done"
+                : "on-track"
+          });
+
+        });
+
+
+      element
+        .querySelector(".goal-name")
+        .addEventListener("change", event => {
+
+          const title =
+            event.target.value.trim();
+
+          update({
+            ...record,
+            title: title || record.title
+          });
+
+        });
+
+
+      element
+        .querySelector(".delete-goal")
+        .addEventListener(
+          "click",
+          () => remove(record)
+        );
+
+    });
+
+
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+}
+
+
+/* =========================================================
+   TASKS
+   ========================================================= */
+
+function renderTasks() {
+
+  const filter = $("task-filter").value;
+
+
+  const tasks =
+    relevant("task")
+      .filter(
+        task =>
+          filter === "all" ||
+          Number(task.month) === Number(filter)
+      )
+      .sort(
+        (a, b) =>
+          Number(a.completed) -
+          Number(b.completed)
+      );
+
+
+  $("tasks-empty").classList.toggle(
+    "hidden",
+    tasks.length > 0
+  );
+
+
+  $("task-list").innerHTML =
+    tasks.map(task => {
+
+      return `
+        <div
+          class="record-item flex items-center gap-3 py-3"
+          data-id="${escapeHTML(task.__backendId)}"
+        >
+
+          <input
+            class="task-check h-4 w-4 accent-[#286450]"
+            type="checkbox"
+            ${task.completed ? "checked" : ""}
+          >
+
+
+          <div class="min-w-0 flex-1">
+
+            <p class="font-bold ${
+              task.completed
+                ? "line-through text-[#68817a]"
+                : ""
+            }">
+              ${escapeHTML(task.title)}
+            </p>
+
+
+            <p class="mt-1 text-xs text-[#68817a]">
+
+              ${
+                task.description
+                  ? `Due ${escapeHTML(task.description)} · `
+                  : ""
+              }
+
+              ${escapeHTML(task.priority || "medium")} priority
+
+            </p>
+
+          </div>
+
+
+          <button
+            class="edit-task icon-btn text-[#286450]"
+            type="button"
+            aria-label="Edit task"
+          >
+            <i data-lucide="pencil" width="16"></i>
+          </button>
+
+
+          <button
+            class="delete-task icon-btn text-[#b9524b]"
+            type="button"
+            aria-label="Delete task"
+          >
+            <i data-lucide="trash-2" width="16"></i>
+          </button>
+
+        </div>
+      `;
+
+    }).join("");
+
+
+  $("task-list")
+    .querySelectorAll("[data-id]")
+    .forEach(element => {
+
+      const record =
+        tasks.find(
+          task =>
+            task.__backendId ===
+            element.dataset.id
+        );
+
+
+      if (!record) return;
+
+
+      element
+        .querySelector(".task-check")
+        .addEventListener("change", event => {
+
+          update({
+            ...record,
+            completed: event.target.checked,
+            status:
+              event.target.checked
+                ? "done"
+                : "active"
+          });
+
+        });
+
+
+      element
+        .querySelector(".delete-task")
+        .addEventListener(
+          "click",
+          () => remove(record)
+        );
+
+
+      element
+        .querySelector(".edit-task")
+        .addEventListener("click", () => {
+
+          editingTask = record;
+
+          $("task-title").value =
+            record.title || "";
+
+          $("task-priority").value =
+            record.priority || "medium";
+
+          $("task-date").value =
+            record.description || "";
+
+          $("task-title").focus();
+
+          showToast(
+            "Editing task — save your changes."
+          );
+
+        });
+
+    });
+
+
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+}
+
+
+/* =========================================================
+   HABITS
+   ========================================================= */
+
+function renderHabits() {
+
+  const habits = relevant("habit");
+
+
+  $("habits-empty").classList.toggle(
+    "hidden",
+    habits.length > 0
+  );
+
+
+  $("habit-list").innerHTML =
+    habits.map(habit => {
+
+      return `
+        <div
+          class="record-item flex items-center gap-3 py-3"
+          data-id="${escapeHTML(habit.__backendId)}"
+        >
+
+          <input
+            class="habit-check h-4 w-4 accent-[#286450]"
+            type="checkbox"
+            ${habit.completed ? "checked" : ""}
+          >
+
+
+          <input
+            class="habit-name min-w-0 flex-1 bg-transparent text-sm font-bold outline-none ${
+              habit.completed
+                ? "line-through text-[#68817a]"
+                : ""
+            }"
+            value="${escapeHTML(habit.title)}"
+          >
+
+
+          <button
+            class="delete-habit icon-btn text-[#b9524b]"
+            type="button"
+            aria-label="Delete habit"
+          >
+            <i data-lucide="x" width="16"></i>
+          </button>
+
+        </div>
+      `;
+
+    }).join("");
+
+
+  $("habit-list")
+    .querySelectorAll("[data-id]")
+    .forEach(element => {
+
+      const record =
+        habits.find(
+          habit =>
+            habit.__backendId ===
+            element.dataset.id
+        );
+
+
+      if (!record) return;
+
+
+      element
+        .querySelector(".habit-check")
+        .addEventListener("change", event => {
+
+          update({
+            ...record,
+            completed: event.target.checked,
+            status:
+              event.target.checked
+                ? "done"
+                : "active"
+          });
+
+        });
+
+
+      element
+        .querySelector(".habit-name")
+        .addEventListener("change", event => {
+
+          const title =
+            event.target.value.trim();
+
+          update({
+            ...record,
+            title: title || record.title
+          });
+
+        });
+
+
+      element
+        .querySelector(".delete-habit")
+        .addEventListener(
+          "click",
+          () => remove(record)
+        );
+
+    });
+
+
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+}
+
+
+/* =========================================================
+   MONTH VIEW
+   ========================================================= */
+
+function renderMonth() {
+
+  $("month-heading").textContent =
+    `${months[selectedMonth]} ${selectedYear}`;
+
+
+  const firstDay =
+    new Date(
+      selectedYear,
+      selectedMonth,
+      1
+    ).getDay();
+
+
+  const days =
+    new Date(
+      selectedYear,
+      selectedMonth + 1,
+      0
+    ).getDate();
+
+
+  const eventDays = new Set(
+    relevant("event")
+      .filter(
+        event =>
+          Number(event.month) ===
+          Number(selectedMonth)
+      )
+      .map(event => Number(event.day))
+  );
+
+
+  let html = "";
+
+
+  for (let i = 0; i < firstDay; i++) {
+    html += "<span></span>";
+  }
+
+
+  for (let day = 1; day <= days; day++) {
+
+    const isToday =
+      selectedYear === now.getFullYear() &&
+      selectedMonth === now.getMonth() &&
+      day === now.getDate();
+
+
+    const isSelected =
+      day === selectedDay;
+
+
+    html += `
+      <button
+        type="button"
+        data-day="${day}"
+        class="
+          ${isSelected ? "selected-day" : ""}
+          ${isToday ? "today" : ""}
+          ${eventDays.has(day) ? "event-day" : ""}
+        "
+        aria-label="${months[selectedMonth]} ${day}"
+      >
+        <span>${day}</span>
+      </button>
+    `;
+  }
+
+
+  $("month-calendar").innerHTML = html;
+
+
+  $("month-calendar")
+    .querySelectorAll("[data-day]")
+    .forEach(button => {
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          selectedDay =
+            Number(button.dataset.day);
+
+          $("event-date").value =
+            dateString(
+              selectedYear,
+              selectedMonth,
+              selectedDay
+            );
+
+          renderMonth();
+
+        }
+      );
+
+    });
+
+
+  /* MONTHLY FOCUS */
+
+  const focus =
+    getRecord(
+      "focus",
+      selectedMonth
+    );
+
+
+  $("monthly-focus").value =
+    focus
+      ? focus.description || ""
+      : "";
+
+
+  /* EVENTS */
+
+  const events =
+    relevant("event")
+      .filter(
+        event =>
+          Number(event.month) ===
+          Number(selectedMonth)
+      )
+      .sort(
+        (a, b) =>
+          Number(a.day) -
+          Number(b.day)
+      );
+
+
+  $("events-empty").classList.toggle(
+    "hidden",
+    events.length > 0
+  );
+
+
+  $("event-list").innerHTML =
+    events.map(event => {
+
+      return `
+        <div
+          class="record-item flex items-center justify-between gap-3 py-3"
+        >
+
+          <p class="min-w-0 text-sm">
+
+            <span class="mr-2 font-bold text-[#286450]">
+              ${event.day}
+            </span>
+
+            ${escapeHTML(event.title)}
+
+          </p>
+
+
+          <button
+            class="event-delete icon-btn text-[#b9524b]"
+            type="button"
+            data-id="${escapeHTML(event.__backendId)}"
+            aria-label="Delete event"
+          >
+            <i data-lucide="trash-2" width="16"></i>
+          </button>
+
+        </div>
+      `;
+
+    }).join("");
+
+
+  $("event-list")
+    .querySelectorAll(".event-delete")
+    .forEach(button => {
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          const event =
+            events.find(
+              item =>
+                item.__backendId ===
+                button.dataset.id
+            );
+
+          if (event) {
+            remove(event);
+          }
+
+        }
+      );
+
+    });
+
+
+  $("event-date").value =
+    dateString(
+      selectedYear,
+      selectedMonth,
+      selectedDay
+    );
+
+
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+}
+
+
+/* =========================================================
+   ANNUAL NOTES
+   ========================================================= */
+
+function renderNotes() {
+
+  const note = getRecord("note");
+
+  $("annual-notes").value =
+    note
+      ? note.description || ""
+      : "";
+}
+
+
+/* =========================================================
+   RENDER EVERYTHING
+   ========================================================= */
+
+function renderAll() {
+
+  const settings =
+    records
+      .filter(record => record.type === "settings")
+      .sort(
+        (a, b) =>
+          new Date(b.created_at || 0) -
+          new Date(a.created_at || 0)
+      )[0];
+
+
+  settingsRecord =
+    settings || null;
+
+
+  if (!initialized && settings) {
+
+    selectedYear =
+      Number(settings.title) ||
+      selectedYear;
+
+  }
+
+
+  initialized = true;
+
+
+  $("task-filter").innerHTML =
+    '<option value="all">All months</option>' +
+    months
+      .map(
+        (month, index) =>
+          `<option value="${index}">${month}</option>`
+      )
+      .join("");
+
+
+  renderHeader();
+  renderMonths();
+  renderGoals();
+  renderTasks();
+  renderHabits();
+  renderMonth();
+  renderNotes();
+
+}
+
+
+/* =========================================================
+   OPEN MONTH
+   ========================================================= */
+
+function openMonth(month) {
+
+  selectedMonth =
+    Number(month);
+
+  selectedDay = 1;
+
+
+  $("overview-view")
+    .classList.add("view-hidden");
+
+
+  $("month-view")
+    .classList.remove("view-hidden");
+
+
+  renderHeader();
+  renderMonth();
+
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+
+/* =========================================================
+   OPEN OVERVIEW
+   ========================================================= */
+
+function openOverview() {
+
+  $("month-view")
+    .classList.add("view-hidden");
+
+
+  $("overview-view")
+    .classList.remove("view-hidden");
+
+
+  renderHeader();
+  renderAll();
+}
+
+
+/* =========================================================
+   LOAD DATA
+   ========================================================= */
+
+async function initializeData() {
+
+  /*
+     First load local records.
+     This ensures Save/Add works even if the
+     online SDK is unavailable.
+  */
+
+  records = loadLocalRecords();
+
+
+  /*
+     Then try the Replit/Canva data SDK.
+  */
+
+  try {
+
+    if (
+      window.dataSdk &&
+      typeof window.dataSdk.subscribe === "function"
+    ) {
+
+      await window.dataSdk.subscribe(
+        data => {
+
+          if (Array.isArray(data)) {
+
+            /*
+              Merge online records with local records.
+            */
+
+            const onlineIds =
+              new Set(
+                data.map(
+                  item => item.__backendId
+                )
+              );
+
+
+            const localOnly =
+              records.filter(
+                item =>
+                  item.__localOnly &&
+                  !onlineIds.has(
+                    item.__backendId
+                  )
+              );
+
+
+            records = [
+              ...data,
+              ...localOnly
+            ];
+
+
+            saveLocalRecords();
+
+            renderAll();
+          }
+
+        }
+      );
+
+    }
+
+  } catch (error) {
+
+    console.error(
+      "Data SDK initialization error:",
+      error
+    );
+
+  }
+
+
+  renderAll();
+}
+
+
+/* =========================================================
+   DOM READY
+   ========================================================= */
+
+document.addEventListener(
+  "DOMContentLoaded",
+  async () => {
+
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+
+
+    /* YEAR NAVIGATION */
+
+    $("previous-year")
+      .addEventListener(
+        "click",
+        async () => {
+
+          selectedYear--;
+
+          await saveSelectedYear();
+
+          renderAll();
+
+        }
+      );
+
+
+    $("next-year")
+      .addEventListener(
+        "click",
+        async () => {
+
+          selectedYear++;
+
+          await saveSelectedYear();
+
+          renderAll();
+
+        }
+      );
+
+
+    $("current-year")
+      .addEventListener(
+        "click",
+        async () => {
+
+          selectedYear =
+            now.getFullYear();
+
+          selectedMonth =
+            now.getMonth();
+
+          selectedDay =
+            now.getDate();
+
+          await saveSelectedYear();
+
+          renderAll();
+
+        }
+      );
+
+
+    /* VIEW NAVIGATION */
+
+    $("overview-tab")
+      .addEventListener(
+        "click",
+        openOverview
+      );
+
+
+    $("month-tab")
+      .addEventListener(
+        "click",
+        () => openMonth(selectedMonth)
+      );
+
+
+    $("back-overview")
+      .addEventListener(
+        "click",
+        openOverview
+      );
+
+
+    /* MONTH NAVIGATION */
+
+    $("previous-month")
+      .addEventListener(
+        "click",
+        () => {
+
+          if (selectedMonth === 0) {
+
+            selectedMonth = 11;
+            selectedYear--;
+
+          } else {
+
+            selectedMonth--;
+
+          }
+
+
+          selectedDay = 1;
+
+          renderAll();
+
+        }
+      );
+
+
+    $("next-month")
+      .addEventListener(
+        "click",
+        () => {
+
+          if (selectedMonth === 11) {
+
+            selectedMonth = 0;
+            selectedYear++;
+
+          } else {
+
+            selectedMonth++;
+
+          }
+
+
+          selectedDay = 1;
+
+          renderAll();
+
+        }
+      );
+
+
+    /* =====================================================
+       ADD GOAL
+       ===================================================== */
+
+    $("goal-form")
+      .addEventListener(
+        "submit",
+        async event => {
+
+          event.preventDefault();
+
+
+          const button =
+            event.submitter;
+
+
+          const title =
+            $("goal-title")
+              .value
+              .trim();
+
+
+          if (!title) return;
+
+
+          const progress =
+            Math.min(
+              100,
+              Math.max(
+                0,
+                Number(
+                  $("goal-progress").value
+                ) || 0
+              )
+            );
+
+
+          const result =
+            await create(
+              {
+                type: "goal",
+                year: selectedYear,
+                month: -1,
+                day: 0,
+                title,
+                description: "",
+                status:
+                  progress === 100
+                    ? "done"
+                    : "on-track",
+                priority: "",
+                progress,
+                completed:
+                  progress === 100,
+                created_at:
+                  new Date().toISOString()
+              },
+              button
+            );
+
+
+          if (result && result.isOk) {
+
+            event.target.reset();
+
+            $("goal-progress").value = 0;
+
+            showToast("Goal added.");
+
+            renderAll();
+
+          }
+
+        }
+      );
+
+
+    /* =====================================================
+       ADD / EDIT TASK
+       ===================================================== */
+
+    $("task-form")
+      .addEventListener(
+        "submit",
+        async event => {
+
+          event.preventDefault();
+
+
+          const button =
+            event.submitter;
+
+
+          const title =
+            $("task-title")
+              .value
+              .trim();
+
+
+          const date =
+            $("task-date").value;
+
+
+          if (!title) return;
+
+
+          let taskMonth = -1;
+          let taskDay = 0;
+
+
+          if (date) {
+
+            const parts =
+              date.split("-");
+
+            taskMonth =
+              Number(parts[1]) - 1;
+
+            taskDay =
+              Number(parts[2]);
+
+          }
+
+
+          const taskRecord = {
+            type: "task",
+            year: selectedYear,
+            month: taskMonth,
+            day: taskDay,
+            title,
+            description: date,
+            status: "active",
+            priority:
+              $("task-priority").value,
+            progress: 0,
+            completed: false,
+            created_at:
+              new Date().toISOString()
+          };
+
+
+          let result;
+
+
+          if (editingTask) {
+
+            result =
+              await update(
+                {
+                  ...editingTask,
+                  ...taskRecord
+                },
+                button
+              );
+
+          } else {
+
+            result =
+              await create(
+                taskRecord,
+                button
+              );
+
+          }
+
+
+          if (result && result.isOk) {
+
+            event.target.reset();
+
+            $("task-priority").value =
+              "medium";
+
+            editingTask = null;
+
+            showToast(
+              "Task saved."
+            );
+
+            renderAll();
+
+          }
+
+        }
+      );
+
+
+    $("task-filter")
+      .addEventListener(
+        "change",
+        renderTasks
+      );
+
+
+    /* =====================================================
+       ADD HABIT
+       ===================================================== */
+
+    $("habit-form")
+      .addEventListener(
+        "submit",
+        async event => {
+
+          event.preventDefault();
+
+
+          const button =
+            event.submitter;
+
+
+          const title =
+            $("habit-title")
+              .value
+              .trim();
+
+
+          if (!title) return;
+
+
+          const result =
+            await create(
+              {
+                type: "habit",
+                year: selectedYear,
+                month: -1,
+                day: 0,
+                title,
+                description: "",
+                status: "active",
+                priority: "",
+                progress: 0,
+                completed: false,
+                created_at:
+                  new Date().toISOString()
+              },
+              button
+            );
+
+
+          if (result && result.isOk) {
+
+            event.target.reset();
+
+            showToast(
+              "Tracker item added."
+            );
+
+            renderAll();
+
+          }
+
+        }
+      );
+
+
+    /* =====================================================
+       ADD EVENT
+       ===================================================== */
+
+    $("event-form")
+      .addEventListener(
+        "submit",
+        async event => {
+
+          event.preventDefault();
+
+
+          const button =
+            event.submitter;
+
+
+          const title =
+            $("event-title")
+              .value
+              .trim();
+
+
+          const dateValue =
+            $("event-date").value;
+
+
+          if (!title || !dateValue) {
+
+            showToast(
+              "Please enter an event and date."
+            );
+
+            return;
+          }
+
+
+          /*
+             IMPORTANT:
+             Parse the date manually instead of
+             relying on timezone conversion.
+          */
+
+          const parts =
+            dateValue.split("-");
+
+
+          const year =
+            Number(parts[0]);
+
+
+          const month =
+            Number(parts[1]) - 1;
+
+
+          const day =
+            Number(parts[2]);
+
+
+          if (
+            !year ||
+            month < 0 ||
+            month > 11 ||
+            !day
+          ) {
+
+            showToast(
+              "Please choose a valid date."
+            );
+
+            return;
+          }
+
+
+          const result =
+            await create(
+              {
+                type: "event",
+                year,
+                month,
+                day,
+                title,
+                description: "",
+                status: "active",
+                priority: "",
+                progress: 0,
+                completed: false,
+                created_at:
+                  new Date().toISOString()
+              },
+              button
+            );
+
+
+          if (result && result.isOk) {
+
+            event.target.reset();
+
+
+            selectedYear = year;
+            selectedMonth = month;
+            selectedDay = day;
+
+
+            $("event-date").value =
+              dateString(
+                selectedYear,
+                selectedMonth,
+                selectedDay
+              );
+
+
+            showToast(
+              "Event added."
+            );
+
+
+            renderAll();
+
+          }
+
+        }
+      );
+
+
+    /* =====================================================
+       SAVE ANNUAL NOTES
+       ===================================================== */
+
+    $("save-notes")
+      .addEventListener(
+        "click",
+        async event => {
+
+          const button =
+            event.currentTarget;
+
+
+          const text =
+            $("annual-notes")
+              .value
+              .trim();
+
+
+          const existing =
+            getRecord("note");
+
+
+          setBusy(button, true);
+
+
+          let result;
+
+
+          if (existing) {
+
+            result =
+              await update(
+                {
+                  ...existing,
+                  description: text
+                },
+                button
+              );
+
+          } else {
+
+            result =
+              await create(
+                {
+                  type: "note",
+                  year: selectedYear,
+                  month: -1,
+                  day: 0,
+                  title: "Annual notes",
+                  description: text,
+                  status: "active",
+                  priority: "",
+                  progress: 0,
+                  completed: false,
+                  created_at:
+                    new Date().toISOString()
+                },
+                button
+              );
+
+          }
+
+
+          setBusy(button, false);
+
+
+          if (result && result.isOk) {
+
+            showToast(
+              "Notes saved."
+            );
+
+            renderAll();
+
+          }
+
+        }
+      );
+
+
+    /* =====================================================
+       SAVE MONTHLY FOCUS
+       ===================================================== */
+
+    $("save-focus")
+      .addEventListener(
+        "click",
+        async event => {
+
+          const button =
+            event.currentTarget;
+
+
+          const text =
+            $("monthly-focus")
+              .value
+              .trim();
+
+
+          const existing =
+            getRecord(
+              "focus",
+              selectedMonth
+            );
+
+
+          setBusy(button, true);
+
+
+          let result;
+
+
+          if (existing) {
+
+            result =
+              await update(
+                {
+                  ...existing,
+                  description: text
+                },
+                button
+              );
+
+          } else {
+
+            result =
+              await create(
+                {
+                  type: "focus",
+                  year: selectedYear,
+                  month: selectedMonth,
+                  day: 0,
+                  title: "Monthly focus",
+                  description: text,
+                  status: "active",
+                  priority: "",
+                  progress: 0,
+                  completed: false,
+                  created_at:
+                    new Date().toISOString()
+                },
+                button
+              );
+
+          }
+
+
+          setBusy(button, false);
+
+
+          if (result && result.isOk) {
+
+            showToast(
+              "Monthly focus saved."
+            );
+
+            renderMonth();
+
+          }
+
+        }
+      );
+
+
+    /* START */
+
+    await initializeData();
+
+  }
+);
+</script>
+
+</body>
+</html>
