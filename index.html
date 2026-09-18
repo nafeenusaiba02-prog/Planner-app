@@ -212,7 +212,7 @@
       if (settingsRecord) return window.dataSdk.update({...settingsRecord, ...item});
       return window.dataSdk.create(item);
     }
-    async function create(record, button) {
+ async function create(record, button) {
   if (records.length >= 999) {
     showToast('Planner limit reached. Delete an item to add another.');
     return { isOk: false };
@@ -231,16 +231,23 @@
   if (button) setBusy(button, false);
 
   if (!result.isOk) {
-    // Save a local copy if the online data service is unavailable
-    const localItems = JSON.parse(localStorage.getItem('planner-items') || '[]');
+    const localItems = JSON.parse(
+      localStorage.getItem('planner-items') || '[]'
+    );
+
     localItems.push(record);
-    localStorage.setItem('planner-items', JSON.stringify(localItems));
+    localStorage.setItem(
+      'planner-items',
+      JSON.stringify(localItems)
+    );
+
+    showToast('Saved locally.');
   }
 
   return result;
 }
-    }
-    async function update(record, button) {
+
+async function update(record, button) {
       if (button) setBusy(button, true);
       const result = await window.dataSdk.update(record);
       if (button) setBusy(button, false);
@@ -405,9 +412,9 @@ $('save-focus').addEventListener('click', async e => {
     } else {
       result = await window.dataSdk.create({
         type: 'focus',
-        year: selectedYear,
-        month: selectedMonth,
-        day: 0,
+     year: date.getFullYear(),
+month: date.getMonth(),
+day: date.getDate(),
         title: 'Monthly focus',
         description: text,
         status: 'active',
