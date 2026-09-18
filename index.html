@@ -213,12 +213,32 @@
       return window.dataSdk.create(item);
     }
     async function create(record, button) {
-      if (records.length >= 999) return showToast('Planner limit reached. Delete an item to add another.');
-      if (button) setBusy(button, true);
-      const result = await window.dataSdk.create(record);
-      if (button) setBusy(button, false);
-      if (!result.isOk) showToast('Could not save that item. Please try again.');
-      return result;
+  if (records.length >= 999) {
+    showToast('Planner limit reached. Delete an item to add another.');
+    return { isOk: false };
+  }
+
+  if (button) setBusy(button, true);
+
+  let result = { isOk: false };
+
+  try {
+    result = await window.dataSdk.create(record);
+  } catch (error) {
+    console.error('Save error:', error);
+  }
+
+  if (button) setBusy(button, false);
+
+  if (!result.isOk) {
+    // Save a local copy if the online data service is unavailable
+    const localItems = JSON.parse(localStorage.getItem('planner-items') || '[]');
+    localItems.push(record);
+    localStorage.setItem('planner-items', JSON.stringify(localItems));
+  }
+
+  return result;
+}
     }
     async function update(record, button) {
       if (button) setBusy(button, true);
@@ -327,7 +347,9 @@
       }
       $('month-calendar').innerHTML = html;
       $('month-calendar').querySelectorAll('[data-day]').forEach(btn=>btn.addEventListener('click', ()=> { selectedDay=Number(btn.dataset.day); $('event-date').value=dateString(selectedYear,selectedMonth,selectedDay); renderMonth(); }));
-      const focus = getRecord('focus', selectedMonth); $('monthly-focus').value = focus ? focus.description : '';
+const focus = getRecord('focus', selectedMonth);
+const localFocus = localStorage.getItem(`monthly-focus-${selectedYear}-${selectedMonth}`);
+$('monthly-focus').value = localFocus || (focus ? focus.description : '');
       const events = relevant('event').filter(e=>e.month===selectedMonth).sort((a,b)=>a.day-b.day);
       $('events-empty').classList.toggle('hidden', events.length > 0);
       $('event-list').innerHTML = events.map(e=>`<div class="record-item flex items-center justify-between gap-3 py-3"><p class="min-w-0 text-sm"><span class="mr-2 font-bold text-[#286450]">${e.day}</span>${escapeHTML(e.title)}</p><button class="event-delete icon-btn text-[#b9524b]" data-id="${e.__backendId}" aria-label="Delete ${escapeHTML(e.title)}"><i data-lucide="trash-2" width="16"></i></button></div>`).join('');
@@ -365,8 +387,70 @@
       $('habit-form').addEventListener('submit',async e=>{e.preventDefault();const b=e.submitter,title=$('habit-title').value.trim();if(!title)return;const result=await create({type:'habit',year:selectedYear,month:-1,day:0,title,description:'',status:'active',priority:'',progress:0,completed:false,created_at:new Date().toISOString()},b);if(result?.isOk){e.target.reset();showToast('Tracker item added.');}});
       $('event-form').addEventListener('submit',async e=>{e.preventDefault();const b=e.submitter,title=$('event-title').value.trim(),date=new Date($('event-date').value+'T00:00:00');if(!title||isNaN(date))return;const result=await create({type:'event',year:selectedYear,month:date.getMonth(),day:date.getDate(),title,description:'',status:'active',priority:'',progress:0,completed:false,created_at:new Date().toISOString()},b);if(result?.isOk){e.target.reset();$('event-date').value=dateString(selectedYear,selectedMonth,selectedDay);showToast('Event added.');}});
       $('save-notes').addEventListener('click',async e=>{const existing=getRecord('note'), text=$('annual-notes').value.trim(), b=e.currentTarget;if(existing) await update({...existing,description:text},b); else await create({type:'note',year:selectedYear,month:-1,day:0,title:'Annual notes',description:text,status:'active',priority:'',progress:0,completed:false,created_at:new Date().toISOString()},b);showToast('Notes saved.');});
-      $('save-focus').addEventListener('click',async e=>{const existing=getRecord('focus',selectedMonth),text=$('monthly-focus').value.trim(),b=e.currentTarget;if(existing)await update({...existing,description:text},b);else await create({type:'focus',year:selectedYear,month:selectedMonth,day:0,title:'Monthly focus',description:text,status:'active',priority:'',progress:0,completed:false,created_at:new Date().toISOString()},b);showToast('Monthly focus saved.');});
-      const handler={onDataChanged(data){records=data;const note=getRecord('note');if(document.activeElement!==$('annual-notes'))$('annual-notes').value=note?note.description:'';renderAll();}};
+   $('save-focus').addEventListener('click', async e => {
+  const text = $('monthly-focus').value.trim();
+  const button = e.currentTarget;
+
+  if (!text) {
+    showToast('Please enter a focus first.');
+    return;
+  }
+
+  const key = `monthly-focus-${selectedYear}-${selectedMonth}`;
+  localStorage.setItem(key, text);
+
+  const existing = getRecord('focus', selectedMonth);
+  let result;
+
+  if (existing) {
+    result = await update({...existing, description: text}, button);
+  } else {
+    result = await create({
+      type: 'focus',
+      year: selectedYear,
+      month: selectedMonth,
+      day: 0,
+      title: 'Monthly focus',
+      description: text,
+      status: 'active',
+      priority: '',
+      progress: 0,
+      completed: false,
+      created_at: new Date().toISOString()
+    }, button);
+  }
+
+  showToast(result?.isOk ? 'Monthly focus saved.' : 'Focus saved on this device.');
+});
+    const handler = {
+  onDataChanged(data) {
+    records = data || [];
+
+    // Also load locally saved items
+    const localItems = JSON.parse(localStorage.getItem('planner-items') || '[]');
+
+    localItems.forEach(localItem => {
+      const exists = records.some(r =>
+        r.type === localItem.type &&
+        r.year === localItem.year &&
+        r.month === localItem.month &&
+        r.day === localItem.day &&
+        r.title === localItem.title &&
+        r.description === localItem.description
+      );
+
+      if (!exists) records.push(localItem);
+    });
+
+    const note = getRecord('note');
+
+    if (document.activeElement !== $('annual-notes')) {
+      $('annual-notes').value = note ? note.description : '';
+    }
+
+    renderAll();
+  }
+};
       const init=await window.dataSdk.init(handler);
       if(!init.isOk) showToast('Your planner could not connect. Please refresh and try again.');
     });
